@@ -17,24 +17,6 @@
             <div>Read</div>
         </section>
         <section id="book-section">
-            <div class="book-style">
-                <p>title</p>
-                <p>author</p>
-                <p>213</p>
-                <p>yes</p>
-            </div>
-            <div class="book-style">
-                <p>title</p>
-                <p>author</p>
-                <p>213</p>
-                <p>yes</p>
-            </div>
-            <div class="book-style">
-                <p>title</p>
-                <p>author</p>
-                <p>213</p>
-                <p>yes</p>
-            </div>
         </section>
     </section>
 
@@ -48,23 +30,23 @@
     <form id="book-info">
         <div>
             <label for="titleInput">Title</label>
-            <input type="text" id="titleInput">
+            <input type="text" id="title-input">
         </div>
         <div>
             <label for="authorInput">Author</label>
-            <input type="text" id="authorInput">
+            <input type="text" id="author-input">
         </div>
         <div>
             <label for="pagesInput">Pages</label>
-            <input type="number" id="pagesInput">
+            <input type="number" id="pages-input">
         </div>
         <div>
             <label for="pagesInput">Have you read it?</label>
-            <input type="radio" id="yes-read" name="yes-read" value="true">
+            <input type="radio" id="yes-read" name="readInput" value="true">
             <label for="yes-read">yes</label>
-            <input type="radio" id="not-read" name="not-read" value="false">
-            <label for="yes-read">no</label><br>
-            <button type="submit">Save</button>
+            <input type="radio" id="not-read" name="readInput" value="false">
+            <label for="not-read">no</label><br>
+            <button type="submit" id="submit-btn">Save</button>
         </div>
     </form>
 
