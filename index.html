@@ -3,53 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Lib</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<section id="blur-overlay">
-    <section id="top-container">
-        <section id="header-section">
-            <div>Title</div>
-            <div>Author</div>
-            <div>Pages</div>
-            <div>Read</div>
-        </section>
-        <section id="book-section">
-        </section>
-    </section>
-
-    <section id="add-btn-div">
+    <section class="main-container">
         <button id="add-btn">
-            <svg class="add-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+            Add book
         </button>
+
+        <table id="book-table">
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Read?</th>
+                <th></th>
+            </tr>
+        </table>
+        
+
+        <form id="book-details">
+            <label for="in-book-name">Title</label>
+            <input type="text" maxlength="50" id="in-book-name" class="input" required>
+
+            <label for="in-book-author">Author</label>
+            <input type="text" maxlength="50" id="in-book-author" class="input">
+
+            <label for="in-book-pages">Pages</label>
+            <input type="number" id="in-book-pages" class="input">
+
+            <div>
+                <label for="read-radio-yes">Yes</label>
+                <input type="radio" name="read" value="Yes" id="read-radio-yes" checked>
+                <label for="read-radio-no">No</label>
+                <input type="radio" name="read" value="No" id="read-radio-no">
+            </div>
+
+            <div>
+                <button type="reset" id="cancel-btn">Cancel</button>
+                <button type="submit" id="submit-btn">Submit</button>
+            </div>
+
+        </form>
     </section>
-</section>
 
-    <form id="book-info">
-        <div>
-            <label for="titleInput">Title</label>
-            <input type="text" id="title-input">
-        </div>
-        <div>
-            <label for="authorInput">Author</label>
-            <input type="text" id="author-input">
-        </div>
-        <div>
-            <label for="pagesInput">Pages</label>
-            <input type="number" id="pages-input">
-        </div>
-        <div>
-            <label for="pagesInput">Have you read it?</label>
-            <input type="radio" id="yes-read" name="readInput" value="true">
-            <label for="yes-read">yes</label>
-            <input type="radio" id="not-read" name="readInput" value="false">
-            <label for="not-read">no</label><br>
-            <button type="submit" id="submit-btn">Save</button>
-        </div>
-    </form>
 
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
